@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lobster&display=swap");
+
+:root {
+	--font-primary: "Inter", sans-serif;
+	--font-secondary: "Lobster", script;
+
+	--color-dark: hsla(197, 29%, 17%, 0.8);
+	--color-primary: #1e9b97;
+	--color-primary-dark: #437b78;
+	--color-primary-light: #6fbbbb;
+	--color-light: #e5ddd2;
+	--color-white: #fdfdfd;
+}
+
+body {
+	font-family: var(--font-primary);
+	background-color: var(--color-primary-dark);
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-top: 32px;
+	text-align: center;
+}
+
+.button {
+	background-color: var(--color-light);
+	padding: 16px 32px;
+	color: var(--color-dark);
+	font: inherit;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	margin: 8px;
+}
+
+.button:disabled {
+	opacity: 0.3;
+}
+
+.button:hover {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: var(--font-secondary);
+	font-size: 3.5rem;
+	color: var(--color-light);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin-bottom: 16px;
+}
+
+.media-wrapper {
+	margin: 16px 0;
+	display: flex;
+}
+
+.sub-text {
+  margin-top: -12px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-light);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+#cameraVideo {
+	width: 250px;
+	height: 200px;
+	border-radius: 16px;
+	margin-right: 16px;
+	background-color: var(--color-light);
+}
+
+#takenPicture {
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 16px;
+}
